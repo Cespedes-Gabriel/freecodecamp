@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentacion técnica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Los elementos .main-section deberán tener al menos diez elementos p en total (no cada uno) -->
+    <nav id="navbar">
+            <header class="header-top">Python Documentation</header>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#Syntax_and_Hello,_World!">Syntax and Hello, World!</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Variables_and_Data_Types">Variables and Data Types</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Control_Structure">Control Structure</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Lists_and_Dictionaries">Lists and Dictionaries</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Functions">Functions</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Modules_and_Libraries">Modules and Libraries</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Object_Oriented_Programming">Object Oriented Programming</a>
+                </li>
+            </ul>
+    </nav>
+    <main id="main-doc">
+        <section  id="Syntax_and_Hello,_World!" class="main-section">
+            <header>Syntax and Hello, World!</header>
+            <article>
+                <p class="p-1">
+                    Python has a simple and readable syntax. As mentioned before, to print "Hello, World!" to the console, you simply need to use the print() function:
+                </p>
+                <div class="code-box">
+                <code>print("Hello, World!")</code>
+                </div>
+                <p class="p-2">In Python, strings can be enclosed in either double or single quotes; both are valid.</p>
+            </article>
+        </section>
+        <section id="Variables_and_Data_Types" class="main-section">
+            <header>Variables and Data Types</header>
+            <article>
+                <p class="p-1">In Python, you don't need to explicitly declare the type of a variable; Python infers it based on the assigned value. Here are some examples of variables and their types:</p>
+                <div class="code-box">
+                <code>
+                    <span class="coment"># Numeric variables</span><br>
+                    age = 25
+                    average_grade = 8.5
+                    <br><br>
+                    <span class="coment"># Text (string) variables</span><br>
+                    name = "John"
+                    message = 'Hello, how are you?'
+                    <br>
+                    <span class="coment"><br># Boolean variables</span><br>
+                    is_adult = True
+                    has_discount = False
+                    </code>
+                
+                </div>
+            </article>
+        </section>
+        <section id="Control_Structure" class="main-section">
+            <header>Control Structure</header>
+            <article class="article-li">
+                <ul>
+                    <li class="p-1">
+                        a. Conditionals (if-else):
+Conditional structures are used for decision-making in the code. For example, to check if a person is of legal <br>
+                        </li>
+                        <div class="code-box">
+                        <code>age = 17
+                            <br><br>
+                        if age >= 18:
+                        <br>
+                            print("You are an adult.")<br>
+                        else:<br>
+                            print("You are a minor.")
+                        </code>
+                    </div>
+                    <li class="p-2 p-1">
+                        b. Loops (for and while):
+Loops allow you to repeat a block of code multiple times. For example, to print numbers from 1 to 5 using a for loop:
+                    </li>
+                    <div class="code-box">
+                   <code>for number in range(1, 6):<br>
+                    print(number)
+                </div>
+                </code> 
+                <p class="p-1 p-2">And using a while loop:</p>
+                <div class="code-box">
+                <code>counter = 1<br>
+                    while counter <= 5:<br>
+                        print(counter)<br>
+                        counter += 1
+                    </code>
+                </div>
+                </ul>
+            </article>
+        </section>
+        <section id="Lists_and_Dictionaries" class="main-section">
+            <header>Lists and Dictionaries</header>
+            <article>
+                <p class="p-1">Python provides data structures like lists and dictionaries to store collections of elements.</p>
+                <ul>
+                    <li class="p-1">a. Lists: Lists are ordered and mutable collections of elements:</li>
+                    <div class="code-box">
+                    <code>fruits = ["apple", "orange", "banana"]<br>
+                            numbers = [1, 2, 3, 4, 5]<br>
+                            mixed = [10, "Python", True]<br>
+                            <br><br>
+                            <span class="coment"> # Accessing list elements:</span><br>
+                            print(fruits[0])  # Output: "apple"<br>
+                            <br><br>
+                            <span class="coment"># Adding elements to the list:</span><br>
+                            fruits.append("grape")<br>
+                            print(fruits)  # Output: ["apple", "orange", "banana", "grape"]<br>
+                            </code>
+                        </div>
+                    <li class="p-2 p-1">b. Dictionaries: Dictionaries are unordered and mutable collections that store key-value pairs:</li>
+                    <div class="code-box">
+                    <code>person = {<br>
+                            "name": "John",<br>
+                            "age": 30,<br>
+                            "occupation": "engineer"<br>
+                        }
+                        <br><br>
+                        <span class="coment"># Accessing dictionary values:</span><br>
+                        print(person["name"])  # Output: "John"<br>
+                        <br><br>
+                        <span class="coment"> # Adding a new key-value pair:</span><br>
+                        person["city"] = "New York"<br>
+                        print(person)  # Output: {"name": "John", "age": 30, "occupation": "engineer", "city": "New York"}<br>
+                        </code>
+                    </div>
+                </ul>
+            </article>
+        </section>
+        <section id="Functions" class="main-section">
+            <header>Functions</header>
+            <article>
+                <p class="p-1">Functions are reusable blocks of code that perform specific tasks. Here's a simple example:</p>
+                <div class="code-box">
+                <code>def sum_numbers(a, b):<br>
+                    return a + b<br>
+                    <br><br>
+                result = sum_numbers(5, 3)<br>
+                print(result)  # Output: 8<br>
+                </code>
+            </div>
+            </article>
+        </section>
+        <section id="Modules_and_Libraries" class="main-section">
+            <header>Modules and Libraries</header>
+            <article>
+                <p class="p-1">Python has a wide range of modules and libraries that facilitate specific tasks.</p>
+                <p class="p-1">The math library in Python is a built-in module that provides a variety of mathematical functions and constants. It is part of the Python Standard Library, which means you don't need to install any external packages to use it.</p>
+                <p class="p-1">In the provided example, we used the sqrt() function from the math module to calculate the square root of 25. The math.sqrt() function takes a single argument (a number) and returns its square root as a floating-point number.</p>
+                <p class="p-1">For example, the math library provides mathematical functions:</p>
+                <div class="code-box">
+                <code>import math<br>
+                    <br><br>
+                    square_root = math.sqrt(25)<br>
+                    print(square_root)  # Output: 5.0<br>
+                    <br><br>
+                    <span class="coment"># You can refer to the documentation for more functions:</span> https://docs.python.org/3/library/math.html
+                    </code>
+                </div>
+            </article>
+        </section>
+        <section id="Object_Oriented_Programming" class="main-section">
+            <header>Object Oriented Programming</header>
+            <article>
+                <p class="p-1">Python is an object-oriented language, allowing you to create classes and objects. Though this might be more advanced, here's a simple example:</p>
+                <div class="code-box">
+                <code>
+                    class Person:<br>
+    def __init__(self, name, age):<br>
+        self.name = name<br>
+        self.age = age<br>
+        <br><br>
+    def greet(self):<br>
+        print(f"Hello, my name is {self.name} and I am {self.age} years old.")<br>
+        <br><br>
+john = Person("John", 25)<br>
+john.greet()  # Output: "Hello, my name is John and I am 25 years old."
+
+                </code>
+                </div>
+
+                <ul>
+                <li class="p-2 ">These are just some of the basic concepts of Python. As you delve into the world of Python, you'll discover a vast array of possibilities and applications that this language offers.</li>
+                </ul>
+                <p>Remember that practice is essential to learn programming, so don't hesitate to try, experiment, and have fun coding in Python!</p>
+                <p class="p-2">Object-Oriented Programming (OOP) is a programming paradigm that focuses on creating objects that encapsulate data and behavior. These objects are instances of classes, which act as blueprints for creating objects with shared attributes and methods. Python is known for its strong support for OOP, making it easy to implement and organize complex systems and applications.</p>
+            </article>
+        </section>
+
+
+    </main>
+</body>
+</html>
